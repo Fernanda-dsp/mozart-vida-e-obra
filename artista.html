@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wolfgang Amadeus Mozart - Vida e Obra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+        }
+        section img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            display: block;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.5 em 0;
+            
+            width: 100%;
+            bottom: 0;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #575757;
+        }
+        .toggle-btn {
+            background-color: #333;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+        }
+        .toggle-btn:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Wolfgang Amadeus Mozart - Vida e Obra</h1>
+    <p>"A música é a língua universal da humanidade." - Wolfgang Amadeus Mozart</p>
+</header>
+
+<nav>
+    <a href="#biografia">Biografia</a>
+    <a href="#obras">Obras Principais</a>
+    <a href="#influencia">Influência</a>
+</nav>
+
+<section id="biografia">
+    <h2>Biografia</h2>
+    <img src="https://pianohome.com.br/wordpress/wp-content/files/pianohome.com.br/2023/11/mozart-1024x683.jpg" alt="Wolfgang Amadeus Mozart">
+    <p>Wolfgang Amadeus Mozart nasceu em Salzburg, Áustria, em 27 de janeiro de 1756, foi um prolífico e influente compositor austríaco do período clássico. Mozart mostrou uma habilidade musical prodigiosa desde sua infância. Compondo sua primeira peça aos cinco anos de idade e realizando apresentações na corte europeia, sua obra abrange diversos estilos musicais, incluindo sinfonias, óperas, música de câmara e concertos.</p>
+</section>
+
+<section id="obras">
+    <h2>Obras Principais</h2>
+    <h3>Sinfonia No. 40 em Sol menor, K. 550 (1788)</h3>
+    <img src="https://d2p73dvwcg8th4.cloudfront.net/Custom/Content/Products/83/53/83532_symphony-in-g-minor-n40-kv-550-study-score-24181_z2_637939914146307359.jpg" alt="Sinfonia No. 40">
+    <p> Uma das sinfonias mais populares de Mozart, conhecida pela sua melodia expressiva e tensão emocional. Ela exemplifica a habilidade de Mozart em criar equilíbrio entre drama e clareza formal.</p>
+
+    <h3>Requiem em Ré menor, K. 626 (1791)</h3>
+    <img src="https://www.partiture-musicali.com/out/pictures/master/product/1/Art_107964_2.GIF" alt="Requiem">
+    <p> O Requiem foi a última obra que Mozart compôs, e permanece uma das mais misteriosas e profundas de toda a música clássica. Ele morreu antes de completar a peça, que foi finalizada por seu discípulo Franz Xaver Süssmayr.</p>
+
+    <h3>A Flauta Mágica, K. 620 (1791)</h3>
+    <img src="https://www.superpartituras.com/Content/demonstracoes/ach--ich-fuhl-s--a-flauta-magica-.jpg" alt="A Flauta Mágica">
+    <p> Uma das óperas mais famosas de Mozart, a Flauta Mágica é uma obra-prima do repertório operático, com uma mistura de elementos simbólicos, místicos e iluministas.</p>
+</section>
+
+<section id="influencia">
+    <h2>Influência</h2>
+    <p>Como um dos maiores compositores da história, Mozart teve uma influência duradoura na música clássica. Sua habilidade em equilibrar complexidade e clareza melodiosa serviu de modelo para compositores subsequentes, como Beethoven e Schubert.</p>
+    <p>Além disso, a beleza e a profundidade emocional de suas obras têm inspirado gerações de músicos, e sua música ainda é executada em todo o mundo, sendo uma parte central do repertório clássico.</p>
+</section>
+
+<footer>
+    <p>Contato: <a href="mailto:mozart@example.com">mozart@example.com</a></p>
+    <p>Redes sociais: 
+        <a href="https://facebook.com/mozart" target="_blank">Facebook</a> |
+        <a href="https://instagram.com/mozart" target="_blank">Instagram</a>
+    </p>
+    <button class="toggle-btn" onclick="toggleFormulario()">Abrir Comentários</button>
+    <form id="form-contato" action="/enviar-contato" method="POST" style="display: none;">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</footer>
+
+<script>
+    function toggleFormulario() {
+        var form = document.getElementById("form-contato");
+        var btn = document.querySelector(".toggle-btn");
+
+        if (form.style.display === "none") {
+            form.style.display = "block";
+            btn.textContent = "Fechar Comentários";
+        } else {
+            form.style.display = "none";
+            btn.textContent = "Abrir Comentários";
+        }
+    }
+</script>
+
+</body>
+</html>
